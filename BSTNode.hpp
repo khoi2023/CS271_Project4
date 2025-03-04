@@ -50,7 +50,7 @@ class BSTNode {
     BSTNode<T> * getLeftChild(void);
 
 
-    //setRight
+    //getRightChild
     BSTNode<T> * getRightChild(void);
 
 
