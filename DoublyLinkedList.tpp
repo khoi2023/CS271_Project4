@@ -348,7 +348,7 @@ bool DoublyLinkedList<T>::empty(void) const {
 
 // Concatenation operator. This returns a new list created by combining the current list with another list.
 // Parameter: The list to be concatenated with the current list.
-// Return value: A new list after concatenation.
+// Return value: A new list after concatenation, with the elements of the current list followed by the elements of the other list.
 template <class T>
 DoublyLinkedList<T> DoublyLinkedList<T>::concatenate(const DoublyLinkedList<T> &list) const {
     DoublyLinkedList<T> result;
