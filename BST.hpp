@@ -9,6 +9,7 @@ Description: Header file for the BST<> templated class
 #pragma once
 
 #include "BSTNode.hpp"
+#include "BSTNode.tpp"
 #include <functional>
 
 /*
