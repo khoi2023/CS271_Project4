@@ -125,26 +125,26 @@ void BSTNode<T>::setRightChild(BSTNode<T> *node) {
 
 // Get minimum value in its subtree.
 // Parameter: NONE.
-// Return value: The minimum value in the subtree in which the node is the root.
+// Return value: The node with the minimum value in the subtree in which the node is the root.
 template <class T>
-T BSTNode<T>::*treeMin(void) {
+BSTNode<T>* BSTNode<T>::treeMin(void) {
     BSTNode<T> *current = this;
     while (current->left != nullptr) {
         current = current->left;
     }
-    return current->value;
+    return current;
 }
 
 // Get maximum value in its subtree.
 // Parameter: NONE.
-// Return value: The maximum value in the subtree in which the node is the root.
+// Return value: The node with the maximum value in the subtree in which the node is the root.
 template <class T>
-T BSTNode<T>::*treeMax(void) {
+BSTNode<T>* BSTNode<T>::treeMax(void) {
     BSTNode<T> *current = this;
     while (current->right != nullptr) {
         current = current->right;
     }
-    return current->value;
+    return current;
 }
 
 // Preorder traversal.
